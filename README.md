@@ -10,11 +10,13 @@
 	- [ChestSort](#chestsort)
 	- [Coins](#coins)
 	- [LockettePro](#lockettepro)
+	- [Mcmmo](#mcmmo)
 	- [MobRepellent](#mobrepellent)
 	- [MoveCraft](#movecraft)
 	- [MythicMobs](#mythicmobs)
 	- [QuickShop](#quickshop)
 	- [SmoothSleep](#smoothsleep)
+	- [TreasureHunt](#treasurehunt)
 	- [UserLogin](#userlogin)
 
 ## Sammanfattning
@@ -104,8 +106,6 @@ If you want to use redstone to open a door, you can do that too! Simply place th
 
 Place a `Gold Block` below the door hinge to control the door with redstone logic.
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -151,8 +151,6 @@ Get a list of all your registered doors.
 #### Conditions
 [Översikt conditions](https://github.com/eldoriarpg/BigDoorOpener/wiki/Conditions)
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -170,8 +168,6 @@ Bygg portaler för att teleportera mellan två punkter.
 #### Ritning:
 ![Portal blueprint](./img/buildportals1.png "Portal blueprint")
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -238,8 +234,6 @@ You built too many cannons and no idea where they are? This command will remove 
 | Fireworks | `FIREWORK ROCKET` |
 | Clusterbomb | `TNT BLOCK` |
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -267,8 +261,6 @@ Open the hotkeys GUI to enable/disable hotkeys per player.
 `/invsort toggle`
 Toggle automatic inventory sorting
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -287,8 +279,6 @@ See your current balance
 `/pay <player> <amount>`  
 Send currency to player
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -323,8 +313,340 @@ If you add a line `[timer:<int>]` to a door lock, the door will automatically cl
 `/lock <line number [1-4]> <text>`  
 Edit line number on selected lock sign
 
-</br>
-</br>
+
+[[Back to top]](#index)
+
+***
+
+### Mcmmo
+Ramverk för att levla och använda skills. Man tappar 10% av sina levels när man dör.  
+[Mer info](https://mcmmo.org/wiki/Main_Page)
+
+#### Commands
+`/stats`  
+See current character statistics
+
+`/party `  
+Check party information.
+
+`/party create <party-name> <password>`  
+Create a party
+
+`/party join <player> <password>`  
+Join a players party
+
+`/party invite <player>`  
+Invite a player to join your party
+
+`/party accept <player> ` 
+Accept a party invite
+
+`/party password <password>`  
+Set a password for the party you currently own
+
+`/party kick <player-name>`  
+Kick a player from the party.
+
+#### Skills
+- [Acrobatics](#acrobatics)
+- [Archery](#archery)
+- [Axes](#axes)
+- [Swords](#swords)
+- [Unarmed](#unarmed)
+- [Excavation](#excavation)
+- [Fishing](#fishing)
+- [Herbalism](#herbalism)
+- [Mining](#mining)
+- [Woodcutting](#woodcutting)
+- [Alchemy](#alchemy)
+- [Repair](#repair)
+- [Taming](#taming)
+
+#### Acrobatics
+Level acrobatics by taking fall damage, successfully rolling and dodging attacks.
+
+##### Graceful Roll (active skill)
+Doubles roll chance. Activate by holding the sneak button while falling.
+
+##### Roll (passive skill)
+Chance to negate fall damage based on the player's acrobatics skill. Caps out at 50% chance at level 100.
+
+##### Dodge (passive skill)
+Chance to halve incoming damage. Caps out at 25% chance at level 100.
+Does not work for lethal damage.
+
+[[Back to skill index]](#skills)
+---
+#### Archery
+Lever archery by dealing damage with bow and arrows based on the distance to the target.
+
+##### Skill Shot (passive skill)
+Each level of skillshot increases the damage dealt with bow and arrows. Caps out at 100% increased damage at level 100.  
+Max damage on a single shot is capped at 12.
+
+##### Daze (passive skill)
+Chance to daze an opponent on hit. Caps out at 45% chance at level 100.  
+Only works in PVP.
+
+##### Retrieve (passive skill)
+Chance to retrieve fired arrows. Caps out at 60% at level 100.
+
+[[Back to skill index]](#skills)
+---
+#### Axes
+Level this skill by dealing damage with axes.
+
+##### Skull Splitter (active skill)
+Unlocks at level 30. Activate by right clicking with an axe in hand.  
+Adds an area of effect to axe attacks, dealing less damage to the primary target. Duration based on level in axes.
+
+##### Axe Mastery (passive skill)
+Increases the damage done with axes. Caps out at 40% at level 100.
+
+##### Critical Strikes (passive skill)
+Chance to increase damage on a hit by 20% vs players and 50% vs mobs. Caps out at 30% chance at level 100.
+
+##### Armor Impact (passive skill)
+Chance to inflict increaesed durability damage on an enemys armor. Caps out at 25% chance at level 100.
+
+##### Greater Impact (passive skill)
+Chance to inflict a greater knockback effect on hit. Caps out at 15% chance at level 50.
+
+[[Back to skill index]](#skills)
+---
+#### Swords
+Level this skill by dealing damage with swords.
+
+##### Serrated Strikes (active skill)
+Unlocks at level 30. Activate by right clicking with a sword in hand.  
+Adds an area of effect to sword attacks, inflicting bleed damage on enemies. Duration based on level in swords.
+
+##### Counter Attack (passive skill)
+Unlocks at level 28. Chance to reflect a portion of the damaged suffered back to the attacker.  
+Caps out at 20% chance at level 100.
+
+##### Rupture (passive skill)
+Chance to inflict damage over time on attack. Caps out at 35% chance at level 90.
+
+[[Back to skill index]](#skills)
+---
+#### Unarmed
+Level this skill by dealing damage with your bare hands.
+
+##### Berserk (active skill)
+Unlocks at level 30. Activate by right clicking with a mob in your crosshair, then left click.  
+Gives a damage boost and allows you to break blocks with no blast resitance much faster. Duration increases with levels in unarmed.
+
+##### Arrow Deflect (passive skill)
+Unlocks at level 35. Chance to deflect arrows back at the attacker.  
+Caps out at 33% chance at level 100.
+
+##### Disarm (passive skill)
+Unlocks at level 45. Chance to disarm an opponent in PVP.  
+Caps out at 20% chance at level 100.
+
+##### Iron Arm Style (passive skill)
+Increases damage done with unarmed attacks. Caps out at 3 bonus damage at level 100.
+
+##### Iron Grip (passive skill)
+Unlocks at level 60. Chance to negate disarm.  
+Caps out at 100% at level 100.
+
+##### Limit break (passive skill)
+Adds raw damage to unarmed PVP attacks depending on the armor the target is wearing.
+
+[[Back to skill index]](#skills)
+---
+#### Excavation
+Level excavation by digging certain blocks with a shovel.
+
+##### Giga Drill Breaker (active skill)
+Unlocks at level 35. Activate by right clicking with a shovel and digging immediately after.  
+Makes the shovel dig much faster for a short duration. Increases duration for each level in excavation.
+
+##### Archaeology (passive skill)
+Chance for block dug with a shovel to drop treasures. Chance for better drops increases with each level in excavation.
+
+[[Back to skill index]](#skills)
+---
+#### Fishing
+Level fishing by fishing. Duh.
+
+##### Ice Fishing (active skill)
+Unlocks at level 18. Ability to fish in icy biomes.
+
+##### Shake (active skill)
+Unlocks at level 25. Use the fishing pole on mobs to shake items off of them.
+
+##### Treasure Hunter (passive skill)
+Chance to find treasures when fishing. Chance for better treasures increases with each level in fishing.
+
+##### Master Angler (passive skill)
+Improves the chance of getting a bite while fishing.
+
+##### Fisherman's Diet (passive skill)
+Improves the hunger restored from eating fish.
+
+##### Magic Hunter (passive skill)
+Chance to find enchanted items while fishing. Chance increases with each level in fishing.
+
+[[Back to skill index]](#skills)
+---
+#### Herbalism
+Level herbalism by breaking blocks that are considered crops. Crop blocks that have several stages of growth will only yield experience when they are fully grown.
+
+##### Green Terra (active skill)
+Unlocked at level 25. Activate by right clicking any block (except dirt) with a hoe and then harvesting crops with it.  
+Harvested crops will yield triple drops and be automatically replanted at a high growth level. Replanting requires the appropriate seeds in inventory.
+
+##### Green Thumb (Blocks) (passive skill)
+Apply moss to dirt, cobblestone or stone bricks by right clicking on it with wheat seeds.  
+Chance to successfully plant moss increases with herbalism level and caps out at 65% at level 100.
+
+##### Green Thumb (Crops) (passive skill)
+Chance to automatically replant crops upon harvesting. Chance caps out at 65% at level 100.
+
+##### Shroom Thumb (passive skill)
+Turn dirt into mycelium by right clicking on it with a mushroom. Requires both red and brown mushrooms in inventory and will consume one of each.  
+Chance to successfully turn a dirt block into mycelium increases with each level in herbalism and caps out at 35% at level 100.
+
+##### Double Drops (passive skill)
+Chance to recieve double drops when harvesting crops. Caps out at 35% chance at level 100.
+
+##### Farmer's Diet (passive skill)
+Increases the amount of hunger restored from grown food, depending on level in herbalism.
+
+##### Hylian Luck (passive skill)
+Chance to find rare items on breaking certain blocks (dead bushes, flowers, flower pots). Caps out at 10% at level 100.
+
+[[Back to skill index]](#skills)
+---
+#### Mining
+Level mining by breaking certain blocks (ore, stone, bricks etc.) with a pickaxe or with Blast Mining.
+
+##### Super Breaker (active skill)
+Unlocks at level 25. Activate by right clicking on a mineable block and then left clicking on said block.  
+Increases the speed at which you mine for the duration of the ability. Duration increases with each level of mining.
+
+##### Blast Mining (active skill)
+Unlocks at level 12. Activate by holding the sneak button and right clicking a TNT block when out of block selection range.  
+Allows you to use TNT to mine ore, with a chance to gain more ore drops and less debris (cobblestone).
+
+##### Double Drops (passive skill)
+Chance to recieve double drops from mining blocks. Caps out at 45% chance at level 100.
+
+##### Bigger Bombs (passive skill)
+Increases the radius of the Blast Mining explosion. Caps out at a 140% increase at level 100.
+
+##### Demolitions Expertise (passive skill)
+Reduces damage recieved from TNT explosions. Caps out at 30% at lvl 100.
+
+[[Back to skill index]](#skills)
+---
+#### Woodcutting
+Level this skill by harvesting wood and mushroom blocks.
+
+##### Tree Feller (active skill)
+Unlocks at level 12. Activate by right clicking on a non-log block with an axe then breaking a wood block.  
+Automatically breaks all blocks in a tree, up to a certain size. Higher levels increases the size of trees that can be harvested.
+
+##### Harvest Lumber (passive skill)
+Chance to harvest an additional log. Caps out at 33% at level 100.
+
+[[Back to skill index]](#skills)
+---
+#### Alchemy
+Level this skill by crafting potions and adding additional ingredients to potions.
+
+##### Catalysis (passive skill)
+Increases the speed of potion brewing. Caps out at a 150% increase at level 100.
+
+##### Concoctions (passive skill)
+Ability to add more ingredients to potions.
+
+[[Back to skill index]](#skills)
+---
+#### Repair
+Level this skill by repairing items.
+
+##### Arcane Forging (passive skill)
+Allows you to repair items with a chance to retain it's enchantments. 
+Enchantments has a chance to be kept at the current level, downgraded or lost, depending on level in repair.
+
+##### Repair Mastery (passive skill)
+Increases the repair amount depending on level in repair.
+
+##### Super Repair (passive skill)
+Chance to double the repair amount when repairing. Caps out at 50% at level 100.
+
+[[Back to skill index]](#skills)
+---
+#### Taming
+Level this skill by taming peaceful mobs.
+
+##### Beast Lore (active skill)
+Unlocks at level 1. Activate by left clicking a wolf, horse or ocelot with a bone.  
+Prints information about the pet.
+
+##### Call of the Wild (active skill)
+Unlocks at level 30. Use by holding the sneak button and left clicking into the air with the specific items in hand.  
+For a wolf, hold 10 bones. For an ocelot, hold 10 raw fish. For a horse hold 10 apples.
+
+##### Gore (passive skill)
+Adds a critical strike chance to your pets. Caps out at 35% chance at level 100.
+
+##### Environmentally Aware (passive skill)
+Pets avoid cactuses and lava and gains immunity to fall damage.
+
+##### Fast Food Service (passive skill)
+Wolves have a 30% chance to heal when attacking.
+
+##### Pummel (passive skill)
+Wolves have a 10% chance to knock back foes.
+
+##### Thick Fur (passive skill)
+Pets gain a 25% damage reduction.
+
+##### Holy Hound (passive skill)
+Wolves heal when attacked by magic or poison.
+
+##### Shock Proof (passive skill)
+Pets gain a 75% resitance to explosion damage.
+
+##### Sharpened Claws (passive skill)
+Pets gain a 40% damage boost.
+
+[[Back to skill index]](#skills)
+---
+#### Salvage
+Salvage is a subskill, which means it can't be levelled through regular means.  
+Your salvage level is determined by the average of your repair and fishing skills.
+
+##### Advanced Salvage (active skill)
+Allows you to salvage items to regain some of the materials. Higher salvage level means you get more of the original materials back.  
+Use by right clicking a gold block while holding the item you want to salvage.
+
+##### Arcane Salvaging (active skill)
+Allows you to get enchanted books when salvaging enchanted items. Higher level increases the chance of salvaging an enchantment.  
+Use by right clicking a gold block while holding the item you want to salvage.
+
+[[Back to skill index]](#skills)
+---
+#### Smelting
+Smelting is a subskill, which means it can't be levelled through regular means.  
+Your smelting level is determined by the average of your repair and mining skills.
+
+##### Fuel Efficiency (passive skill)
+Burn less fuel when smelting. Increases efficiency of fuel for each level in smelting.
+
+##### Second Smelt (passive skill)
+Chance to gain an extra material when smelting. Caps out at 25% at level 100.
+
+##### Understanding the Art (passive skill)
+Increases the experience you gain when smelting items. Caps out at an 140% increase at level 100.
+
+[[Back to skill index]](#skills)
+---
 
 [[Back to top]](#index)
 
@@ -354,8 +676,6 @@ To remove an active mob repellent just destroy one of the blocks in the structur
 | Medium | `Gold Block` | 50 blocks |
 | Large | `Diamond Block` | 100 blocks |  
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -392,8 +712,6 @@ För att manuellt styra skeppet håller du i en `Stick` och högerklickar i den 
 | Turret | 20 | 1000 |  | No |
 | Ship | 50 | 10000 | `Plank Blocks` or `Wooden Slabs` 25%, build on water | No |
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -403,8 +721,6 @@ För att manuellt styra skeppet håller du i en `Stick` och högerklickar i den 
 Lägger till extra mobs, bl.a. rare- och bossmobs med unika skills och loot.  
 That's it ¯\\\_(ツ)\_/¯
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -437,8 +753,6 @@ Create a shop out of the chest you're looking at, stocked with the item you're h
 6. Click the options to change them. Do this by opening chat (default T).
 7. Interact with a shop by left clicking the sign.
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
@@ -448,8 +762,18 @@ Create a shop out of the chest you're looking at, stocked with the item you're h
 Snabbar upp tiden beroende på hur många spelare som sover.  
 Går att använda under natten eller under ett åskoväder.
 
-</br>
-</br>
+
+[[Back to top]](#index)
+
+***
+
+### TreasureHunt
+Gå på skattjakt.
+
+#### How-to
+A message appears in chat when a treasure has spawned.  
+Left click with rotten meat in hand to get the distance to your nearest treasure, consuming one rotten meat.  
+Close the distance and dig down.
 
 [[Back to top]](#index)
 
@@ -471,8 +795,6 @@ Register an account.
 `/login <password>`  
 Log-in to your account.
 
-</br>
-</br>
 
 [[Back to top]](#index)
 
