@@ -9,6 +9,7 @@
 	- [Cannons](#cannons)
 	- [ChestSort](#chestsort)
 	- [Coins](#coins)
+	- [LandLord](#landlord)
 	- [LockettePro](#lockettepro)
 	- [Mcmmo](#mcmmo)
 	- [MobRepellent](#mobrepellent)
@@ -284,6 +285,85 @@ Send currency to player
 
 ***
 
+### LandLord
+Köp landområden och sätt regler för dessa.
+
+#### Tutorial
+Köp först och främst en claim i shoppen i spawnområdet.  
+Claims används för att köpa land.
+
+Gå sedan till det område du vill köpa.  
+Öppna landkartan med `/land map` för att se vilket område du står i.
+
+Köp området med `/land claim`, eller `/land multiclaim` om du vill köpa ett större område.
+
+Använd `/land borders` för att se gränserna för ditt landområde.
+
+Med `/land manage` kan du ställa in reglerna för ditt landområde, t.ex. vem som kan öppna kistor, bygga osv.
+
+#### Commands
+All commands should start with the prefix `/land`
+
+`help`  
+Displays the help menu. You can click in the chat to navigate the menu.
+
+`claim`  
+Allows to claim the land you are standing on. Also allows to buy up the land of inactive players or advertised lands.  
+One command for all the actions. Different chat messages are indicating if a player is buying a free land, an inactive or an advertised one.
+
+`multiclaim <option>`  
+Claims multiple lands at once. Requires the a claiming option as parameter.  
+Options are "circular" (not yet implemented) or "rectangular".  
+All the individual claim actions are redirected to the function that handles /land claim, so multiclaim might show a higher land claim count then the amount of lands than actually will be claimed.
+
+`unclaim`  
+Unclaims the land you are standing in. Returns 80% of investment cost.
+
+`addfriend <player1> <player2> ...`  
+Adds the selected players as friends in the land you are standing in.
+
+`addfriendall <player>`  
+Adds the selected player as a friend in all your lands.
+
+`unfriend <player1> <player2> ...`  
+Removes the selected players as friends from the land you are standing in.
+
+`unfriendall <player>`  
+Removes the selected player as a friend from all your lands.
+
+`manage`  
+Opens the land management GUI for the land you are standing in.  
+Here you can change the greet- and leave message, change permissions and more.
+
+`manageall`  
+Same as above, but for all your lands.
+
+`list <player>`
+Lists all lands of selected player. Leave empty to list your own lands.  
+
+`info`  
+Shows info of the land you are currently standing in.  
+Boundaries are highlighted with particles.
+
+`map`  
+Toggles the land map. Use again to hide map.
+
+`claims`  
+Shows the amount of claims you have available.
+
+`borders`  
+Toggles borders for the land you are standing in. Use again to disable.
+
+`advertise`  
+Advertise the land you are currently standing on, meaning another player can buy it for the price you set.
+
+`removeadvertise`  
+Remove an advertisement from the land you are currently standing in.
+
+[[Back to top]](#index)
+
+***
+
 ### LockettePro
 **OBS! Att låsa ett objekt kostar ingame valuta (20 GP)**  
 Lås dörrar, kistor m.m.  
@@ -319,7 +399,7 @@ Edit line number on selected lock sign
 ***
 
 ### Mcmmo
-Ramverk för att levla och använda skills. Man tappar 10% av sina levels när man dör.  
+Ramverk för att levla och använda skills. Man tappar 5% av sina levels när man dör.  
 [Mer info](https://mcmmo.org/wiki/Main_Page)
 
 #### Commands
