@@ -29,7 +29,7 @@ Ni får tåla Svengelskan då det mesta är kopierat direkt från pluginens wiki
 ## Plugins
 
 ### BigDoors
-**OBS! Att skapa ett objekt med BigDoors kostar ingame valuta (100 + (5 x blockCount) GP)**  
+**OBS! Att skapa ett objekt med BigDoors kostar ingame valuta (80 + (5 x blockCount) GP)**  
 Används för att skapa rörliga dörrar, klaffbroar m.m. av block.  
 [Mer info](https://www.spigotmc.org/resources/big-doors.58669/)
 
@@ -175,7 +175,7 @@ Bygg portaler för att teleportera mellan två punkter.
 ***
 
 ### Cannons
-**OBS! Att skapa en kanon kostar ingame valuta (100 - 200 GP)**  
+**OBS! Att skapa en kanon kostar ingame valuta (100 till 200 GP)**  
 Skapa och avfyra kanoner.
 
 #### Tutorial
